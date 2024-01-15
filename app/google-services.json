@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "319701183089",
+    "firebase_url": "https://visitors-monitoring-e3b77-default-rtdb.firebaseio.com",
+    "project_id": "visitors-monitoring-e3b77",
+    "storage_bucket": "visitors-monitoring-e3b77.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:319701183089:android:f9037ec85a84bc56ebc9d0",
+        "android_client_info": {
+          "package_name": "com.example.locationtracker"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "319701183089-fc90bnuefqsqir6tb2aoeuf6e6stua6v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCkZWlSfw59UkHXdlsMjdYCA_5Hv0a_z9Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "319701183089-fc90bnuefqsqir6tb2aoeuf6e6stua6v.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

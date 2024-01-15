@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--first of all we are going to create thumb item where we will
+    keep state_checked="true" that means when toggleButton is turned on.
+    It is filled with white color having border-color green. Its height and
+    width both are made 100 dp.-->
+    <item android:state_checked="true" >
+        <layer-list>
+
+            <!-- Drop Shadow Stack -->
+
+            <item>
+                <shape>
+                    <padding android:top="1dp" android:right="1dp" android:bottom="1dp" android:left="1dp" />
+                    <stroke android:color="#15000000" android:width="1dp" />
+                    <corners android:radius="100dp" />
+                </shape>
+            </item>
+            <item>
+                <shape>
+                    <padding android:top="1dp" android:right="1dp" android:bottom="1dp" android:left="1dp" />
+                    <stroke android:color="#20000000" android:width="1dp" />
+                    <corners android:radius="100dp" />
+                </shape>
+            </item>
+            <item>
+                <shape>
+                    <padding android:top="1dp" android:right="1dp" android:bottom="1dp" android:left="1dp" />
+                    <stroke android:color="#25000000" android:width="1dp" />
+                    <corners android:radius="100dp" />
+                </shape>
+            </item>
+            <item>
+                <shape>
+                    <padding android:top="1dp" android:right="1dp" android:bottom="1dp" android:left="1dp" />
+                    <stroke android:color="#30000000" android:width="1dp" />
+                    <corners android:radius="100dp" />
+                </shape>
+            </item>
+            <item>
+                <shape android:shape="oval">
+                    <solid android:color="@android:color/holo_green_light" />
+                    <stroke android:width="15dp" android:color="@color/strokeColor" />
+                    <size android:width="150dp" android:height="150dp" />
+                </shape>
+            </item>
+            <item android:drawable="@drawable/on_btn"
+                android:top="20dp"
+                android:bottom="20dp"
+                android:left="20dp"
+                android:right="20dp"/>
+        </layer-list>
+
+    </item>
+
+
+    <!--first of all we are going to create thumb item where we will
+    keep state_checked="false" that means when toggleButton is turned off.
+    It is filled with white color having border-color white. Its height and
+    width both are made 100 dp.-->
+    <item android:state_checked="false">
+        <layer-list>
+
+            <!-- Drop Shadow Stack -->
+
+            <item>
+                <shape>
+                    <padding android:top="1dp" android:right="1dp" android:bottom="1dp" android:left="1dp" />
+                    <stroke android:color="#15000000" android:width="1dp" />
+                    <corners android:radius="100dp" />
+                </shape>
+            </item>
+            <item>
+                <shape>
+                    <padding android:top="1dp" android:right="1dp" android:bottom="1dp" android:left="1dp" />
+                    <stroke android:color="#20000000" android:width="1dp" />
+                    <corners android:radius="100dp" />
+                </shape>
+            </item>
+            <item>
+                <shape>
+                    <padding android:top="1dp" android:right="1dp" android:bottom="1dp" android:left="1dp" />
+                    <stroke android:color="#25000000" android:width="1dp" />
+                    <corners android:radius="100dp" />
+                </shape>
+            </item>
+            <item>
+                <shape>
+                    <padding android:top="1dp" android:right="1dp" android:bottom="1dp" android:left="1dp" />
+                    <stroke android:color="#30000000" android:width="1dp" />
+                    <corners android:radius="100dp" />
+                </shape>
+            </item>
+            <item>
+                <shape android:shape="oval">
+                    <solid android:color="@android:color/white" />
+                    <stroke android:width="15dp" android:color="@color/strokeColor" />
+                    <size android:width="150dp" android:height="150dp" />
+                </shape>
+            </item>
+            <item android:drawable="@drawable/off_btn"
+                android:top="20dp"
+                android:bottom="20dp"
+                android:left="20dp"
+                android:right="20dp"/>
+        </layer-list>
+    </item>
+
+</selector>
