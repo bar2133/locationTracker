@@ -20,6 +20,7 @@ import android.text.TextWatcher;
 import android.util.Log;
 import android.util.Patterns;
 import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
@@ -58,6 +59,7 @@ public class MainActivity extends AppCompatActivity implements LocationListener 
     int location_counter = 0;
     boolean locationIdValid = false;
     boolean userIdValid = false;
+    Button exitButton;
 
     //Location
     private LocationManager locationManager;
@@ -78,9 +80,22 @@ public class MainActivity extends AppCompatActivity implements LocationListener 
 
         wrongLocationId = findViewById(R.id.wrongLocationId);
         onOffToggle = findViewById(R.id.onOffToggle);
+
+        exitButton = findViewById(R.id.exitBtn);
         //listeners
         setLocationIdTextListener();
+        setExitBtnListener();
         setUserIdTextListener();
+    }
+
+    private void setExitBtnListener() {
+        exitButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                finish();
+                System.exit(0);
+            }
+        });
     }
 
     private void initLocationServices() {
